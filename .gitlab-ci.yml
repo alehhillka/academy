@@ -6,4 +6,5 @@ services:
 build:
   stage: build
   script:
-    - docker build -t test .
+    "  script:
+    - docker build -t myimage:${CI_COMMIT_SHA} ."
